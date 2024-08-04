@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Resume | Michaela Hillier</title>
+  
+
+  <meta property="og:title" content="Resume | Michaela Hillier" />
+  <meta property="og:description" content="Experienced marketing professional with a robust background in project management and SAAS. Proven
+  track record of spearheading process improvement initiatives, driving significant growth and ROI, and
+  ensuring optimization across various platforms. Combines strategic vision with hands-on expertise to deliver
+  impactful and measurable results in fast-paced environments." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.michaelahillier.com/" />
+  <meta property="og:site_name" content="Resume | Michaela Hillier, PMP" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="en_US">
+
+  <meta name="description" content="Experienced marketing professional with a robust background in project management and SAAS. Proven
+  track record of spearheading process improvement initiatives, driving significant growth and ROI, and
+  ensuring optimization across various platforms. Combines strategic vision with hands-on expertise to deliver
+  impactful and measurable results in fast-paced environments.">
+  <meta name="keywords" content=" Project Management, Stakeholder Communication, Strategic Planning, Agile and Scrum Methodologies,  Customer-centric Approach, Process Improvement, Training & Development, Performance Analysis">
+
+  <meta itemprop="name" content="Resume | Michaela Hillier">
+  <meta itemprop="description" content="Experienced marketing professional with a robust background in project management and SAAS. Proven
+  track record of spearheading process improvement initiatives, driving significant growth and ROI, and
+  ensuring optimization across various platforms. Combines strategic vision with hands-on expertise to deliver
+  impactful and measurable results in fast-paced environments.">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://fb.me/react-0.14.6.js"></script>
+  <script src="https://fb.me/react-dom-0.14.6.js"></script>
+  <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script type="text/jsx">
+
+    var DATA = {
+      name: "MICHAELA",
+      name2: "HILLIER, PMP",
+
+      subtext: "EXPERIENCED MARKETING PROFESSIONAL",
+      jobStatus: "Based in Rochester, NY",
+      linkedinURL: 'https://www.linkedin.com/in/michaela-hillier/',
+      resumeURL: 'https://docs.google.com/document/d/e/2PACX-1vSxXQNAiTz3rbQZRuQjJIg_ZuU2Ll2XhOCu8ZcsODxkssGt5dOBuwM9RNo99z9uMV2vg6VNOdtt8fOO/pub',
+      iframeURL: 'https://stephsimple3dmap.surge.sh/'
+    }
+
+    var App = React.createClass({
+      componentDidMount: function() {
+        var typed = new Typed(".typed", {
+          strings: ["I'm a Strategic Program Manager", "I'm a Project Manager", "I'm a Demand Generation Manager", "I'm a Marketing Professional"],
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000,
+          startDelay: 500,
+          loop: true
+        });
+        AOS.init();
+      },
+      render: function() {
+        return(
+          <div className="app">
+            <Left
+              name={this.props.profileData.name}
+              name2={this.props.profileData.name2}
+              subtext={this.props.profileData.subtext}
+              jobStatus={this.props.profileData.jobStatus}
+              linkedinURL={this.props.profileData.linkedinURL}
+            />
+            <Right
+              intro={this.props.profileData.intro}
+              resumeURL={this.props.profileData.resumeURL}
+              iframeURL={this.props.profileData.iframeURL} 
+            />
+          </div>
+        );
+      }
+    });
+
+    var Left = React.createClass({
+      render: function() {
+        return(
+          <div className="left">
+            <div className="bg-img" data-aos="fade-in"></div>
+            <div className="left-inner">
+              <div className="info">
+                <h2 className="name" data-aos="fade-up" >{this.props.name}</h2>
+                <h2 className="name2" data-aos="fade-up" >{this.props.name2}</h2>
+
+                <span className="typed" data-aos="fade-up" ></span>
+                <div className="subtext" data-aos="fade-up" >{this.props.subtext}</div>
+                <div className="jobStatus" data-aos="fade-up" >{this.props.jobStatus}</div>
+                <div className="social-links">
+                  <a href={this.props.linkedinURL} target="_blank"><i className="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    var Right = React.createClass({
+      render: function() {
+        return(
+          <div className="right">
+
+            <div className="right-inner">
+              
+              <div className="introduction" data-aos="fade-up" >
+                <h4 data-aos="fade-up" >Intro</h4>
+                <div className="content">
+                  <p className="intro-p" data-aos="fade-up">Experienced marketing professional with a robust background in project management and SAAS. </p>
+
+                  <p className="intro-p" data-aos="fade-up" >A proven track record of spearheading process improvement initiatives, driving significant growth and ROI, and ensuring optimization across various platforms. I combine strategic vision with hands-on expertise to deliver impactful and measurable results in fast-paced environments.</p>
+
+                  <p className="intro-p" data-aos="fade-up"> I excel in optimizing demand generation tools, staying abreast of industry best practices, and driving efficiency through innovative solutions. My background also includes significant roles in managing web and media projects, coaching teams, and supporting technical implementations and client engagement.</p>
+
+                  <h2 data-aos="fade-up" >I am a Marketing Professional</h2>
+                
+      
+                </div>
+              </div>
+
+
+              <div className="selzterbreak" data-aos="fade-up">
+
+              <div className="profile-section" data-aos="fade-up">
+
+                <div className="profile-item"  data-aos="fade-up">
+                  <h5 data-aos="fade-up">Project Managment</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p> Demonstrated ability to lead large-scale projects from concept to completion</p>
+                </div>
+                <div className="profile-item" data-aos="fade-up">
+                  <h5 data-aos="fade-up">Stakeholder Communication</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Proven experience liaising with both internal teams and external clients to ensure successful project outcomes</p>
+                </div>
+                <div className="profile-item" data-aos="fade-up">
+                  <h5 data-aos="fade-up">Strategic Planning</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Development of strategic initiatives and long-term planning with a focus on company goals and objectives</p>
+                </div>
+              </div>
+
+
+              <div className="profile-section" data-aos="fade-up">
+                <div className="profile-item"  data-aos="fade-up">
+                  <h5 data-aos="fade-up">Agile & Scrum Methodologies</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Utilization of Agile and Scrum methodologies to effectively manage, prioritize software development, and project deliverables</p>
+                </div>
+                <div className="profile-item" data-aos="fade-up">
+                  <h5 data-aos="fade-up">Customer-Centric Approach</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Advocacy for client needs while ensuring alignment with company goals and revenue targets</p>
+                </div>
+                <div className="profile-item" data-aos="fade-up">
+                  <h5 data-aos="fade-up">Process Improvement</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Recognized opportunities for and led initiatives to improve workflows, software enhancements, and overall operational efficiency</p>
+                </div>
+              </div>
+              
+              
+              <div className="profile-section" data-aos="fade-up">
+                <div className="profile-item" >
+                  <h5 data-aos="fade-up">Training & Development</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Trained clients and internal teams on software platforms and proprietary solutions</p>
+                </div>
+                <div className="profile-item" >
+                  <h5 data-aos="fade-up">Performance Analysis</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p> Analyzed team and project metrics, utilizing insights to enhance operational efficiency and drive results</p>
+                </div>
+                <div className="profile-item" >
+                  <h5 data-aos="fade-up">Profile 1</h5>
+                  <div className="profile-line"  data-aos="fade-up"></div>
+                  <p>Hello World</p>
+                </div>
+              </div>
+         
+            </div>
+
+            
+              <div className="resume" data-aos="fade-up">
+                <h4 data-aos="fade-up">Experience</h4>
+                <p data-aos="fade-up"><em>With over 9 years of experience in project management and marketing, leading cross-functional teams and managing large-scale digital marketing initiatives</em></p>
+                
+                <div className="content">
+                  <div className="row">
+                    
+                    <div className="col-lg-6">
+                      <h2 data-aos="fade-up">Demand Generation Manager</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">July 2021 - Present</h5>
+                        <p data-aos="fade-up"><em>OnSolve, Remote</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Managed and optimized a suite of demand generation tools, focusing on ROI and campaign strategies through effective audience segmentation and targeting.</li>
+                          <li data-aos="fade-up">Spearheaded & delivered business outcomes through integrated campaigns, events, webinars, and partner programs, driving MQLs, SQLs, and successful sales conversions.</li>
+                          <li data-aos="fade-up">Established scalable processes, templates, and best practices to enhance marketing initiatives and outreach programs.</li>
+                          <li data-aos="fade-up">Pivotal role with senior leadership, facilitating a cross-functional approach to strategy alignment, and ensuring that projects support partnership marketing strategies.</li>
+                        </ul>
+                        <p data-aos="fade-up"><em>Additional Highlights</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Promoted into the role due to performance in building and managing campaigns as a marketing project manager. 
+                          </li>
+
+                          <li data-aos="fade-up">Recipient of the 2023 Champions Club award, in recognition of exemplary contributions to company growth, values, and culture.</li>
+                        </ul>
+                      </div>
+
+
+
+
+                      <h2 data-aos="fade-up">Marketing Project Manager</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">July 2021 - August 2023</h5>
+                        <p data-aos="fade-up"><em>OnSolve, Remote</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Developed and implemented a project management system for the marketing team, enhancing efficiency and cross-functional communication.</li>
+                          <li data-aos="fade-up">Led company-wide initiatives like the 2023 Operational Plan and Annual Kickoff, ensuring team accountability, risk mitigation, and regular updates to stakeholders.</li>
+                          <li data-aos="fade-up">Conducted quarterly and sprint planning, aiding teams in prioritizing tasks and solving complex challenges in a high-paced setting.</li>
+                        </ul>
+                      </div>
+
+
+                      
+
+                      <h2 data-aos="fade-up">Senior Project Manager</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">June 2020 - July 2021</h5>
+                        <p data-aos="fade-up"><em>Dixon Schwabl</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Managed and developed large-scale digital marketing projects for enterprise businesses, spanning web development, automation, design, media, and content marketing.</li>
+                            <li data-aos="fade-up">Led cross-functional teams in a high-paced agency, driving efficiency and addressing client challenges with innovative solutions.</li>
+                            <li data-aos="fade-up">Coached project managers, engineers, and creatives by promoting an Agile framework adoption and shaped PMO processes to boost productivity.</li>
+                            <li data-aos="fade-up">Maintained quarterly web project roadmaps, using Jira for cross-team documentation and tracking.</li>
+                        </ul>
+                      </div>
+
+
+ 
+
+                      
+                      
+                      
+
+
+                      <h2 data-aos="fade-up">Program Manager</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">October 2019 - February 2020 </h5>
+                        <p data-aos="fade-up"><em>CultureIQ</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Managed the development, deployment, and reporting analytics of full-scale census surveys for clients ranging in size from 150 to over 100,000 employees.</li>
+                          <li data-aos="fade-up">Conducted training and provided guidance on the use of the proprietary CultureIQ software platform for client administrators.</li>
+                          <li data-aos="fade-up">Partnered with internal resources to develop creative solutions for client challenges and leveraged the software platform in a way that best suited their needs.</li>
+                          <li data-aos="fade-up"> Performed ongoing maintenance of job aids and internal user guides.</li>
+                        </ul>
+                      </div>
+
+
+                      
+
+
+                      
+
+
+                      <h2 data-aos="fade-up">Client Services Supervisor - Implementation</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">March 2018 - October 2019</h5>
+                        <p data-aos="fade-up"><em>Heartland School Solutions</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Established and led a team of Implementation Coordinators, overseeing client onboarding, needs analysis, custom solution design, and training on software use.</li>
+                          <li data-aos="fade-up">Developed processes for client integration, while mentoring and evaluating team members regularly.</li>
+                          <li data-aos="fade-up">Employed agile methodologies for software releases and analyzed team metrics to present quarterly updates to senior management.</li>
+                          <li data-aos="fade-up">Served as an expert on proprietary software, guiding sales teams on client-specific needs.</li>
+                          <li data-aos="fade-up">Prioritized workflow based on contracts, client requirements, and revenue objectives.</li>
+                        </ul>
+                      </div>
+                      
+
+
+                      
+
+
+                      <h2 data-aos="fade-up">Associate Project Manager</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">January 2017 - March 2018</h5>
+                        <p data-aos="fade-up"><em>Eagleview</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Led imagery capture projects for government clients across multiple states, managing from inception to delivery and liaising with all stakeholders.</li>
+                          <li data-aos="fade-up">Established an internal knowledge base using Confluence.</li>
+                          <li data-aos="fade-up">Balanced client needs with project timelines and company revenue objectives.</li>
+                          <li data-aos="fade-up"> Supported Sales by demonstrating our product to county government stakeholders during enterprise RFPs.
+                          </li>
+                        </ul>
+                        <p data-aos="fade-up"><em>Additional Highlights</em></p>
+                      </div>
+
+
+                      <h2 data-aos="fade-up">Project Planner</h2>
+                      <div className="resume-item" >
+                        <h5 data-aos="fade-up">July 2016 - January 2017</h5>
+                        <p data-aos="fade-up"><em>Eagleview</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Supported cross-functional teams in planning and execution of imagery capture project.</li>
+                          <li data-aos="fade-up">Created and managed the creation of training documents and resources.</li>
+                          <li data-aos="fade-up">Provided GIS support and analysis for special projects</li>
+                        </ul>
+                      </div>
+
+
+
+                      <h2 data-aos="fade-up">Technical Trainer & Support</h2>
+                      <div className="resume-item" >
+                        
+                        <h5 data-aos="fade-up">June 2015 - July 2016</h5>
+                        <p data-aos="fade-up"><em>Heartland School Solutions</em></p>
+                        <ul>
+                          <li data-aos="fade-up">Conducted on-site implementations for new software clients and provided technical support for existing ones.</li>
+                          <li data-aos="fade-up">Spearheaded projects focused on process improvements, software upgrades, and client engagement.</li>
+                          <li data-aos="fade-up">Assessed customer needs, offering software utilization insights.</li>
+                          <li data-aos="fade-up">Designed a system in Axosoft to enhance technical support representatives' access to the product roadmap, user stories, and defects.</li>
+                        </ul>
+                      </div>
+
+                      
+
+                    </div>
+                    <div className="col-lg-6">
+                      <h3 className="resume-title" data-aos="fade-up">Certification</h3>
+                      <div className="resume-item" data-aos="fade-up">
+                        <h4 data-aos="fade-up">Project Managment Professional (PMP)</h4>
+                        <p data-aos="fade-up"><em>Project Management Institute</em></p>
+                      </div>
+
+
+                      <h3 className="resume-title" data-aos="fade-up">Education</h3>
+                      <div className="resume-item" data-aos="fade-up">
+                        <h4 data-aos="fade-up">Bachelor of Science in Psychology</h4>
+                        <p data-aos="fade-up"><em>Cum Laude</em></p>
+                        <h5>2011 - 2014</h5>
+                        <p data-aos="fade-up"><em>The College at Brockport</em></p>
+                      </div>
+
+                      <h3 className="resume-title" data-aos="fade-up">Other Work Experience</h3>
+                      <div className="resume-item" data-aos="fade-up">
+                        <h4 data-aos="fade-up">Fitness Coach</h4>
+                        <h5>2015</h5>
+                        <p data-aos="fade-up"><em>RAC for Women</em></p>
+                      </div>                     
+                      <div className="resume-item" data-aos="fade-up">
+                        <h4 data-aos="fade-up">Interpretive Park Staff</h4>
+                        <h5>2013 - 2014</h5>
+                        <p data-aos="fade-up"><em>NYS Office of Parks, Recreation, & Historic Preservation</em></p>
+                      </div> 
+                      <div className="resume-item" data-aos="fade-up">
+                        <h4 data-aos="fade-up">Snow Sports Instructor</h4>
+                        <h5>2012 - 2014</h5>
+                        <p data-aos="fade-up"><em>Swain Resort</em></p>
+                      </div> 
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+
+              <div className="projects">
+                
+                <h4></h4>
+              <br></br>
+
+              </div>
+              
+
+              
+              <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link" >Grab my resume here</div></a>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <App profileData={DATA}/>,
+      document.getElementById('content')
+    );
+
+  </script>
+
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+</body>
+</html>
